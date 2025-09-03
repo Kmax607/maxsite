@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Kraus | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <img src="Max Logo.png" alt="Max Logo">
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle">☰</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="Max Logo.png" alt="Max Logo" class="hero-logo">
+    <h1><span class="highlight">Hi, I'm Max.</span><br> I build sleek, functional websites.</h1>
+    <p>Check out my work below and see what I can do.</p>
+    <a href="#projects" class="btn">View Projects</a>
+</section>
+
+
+<!-- HEADSHOT + QUOTE -->
+<section class="quote-section">
+    <div class="quote-container">
+        <img src="headshot.jpg" alt="Max Headshot" class="headshot">
+        <div class="quote-text">
+            <!-- Keep this empty if you prefer; JS will inject the words -->
+            <p id="animated-quote"></p>
+
+            <!-- If you already have an author element, keep it or JS will create it -->
+            <span class="quote-author">- Max's Mom</span>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+    <h2>Featured Projects</h2>
+    <div class="carousel">
+        <div class="carousel-track">
+            <img src="SC1.png" alt="Socially Current">
+            <img src="OneShot1.png" alt="One Shot">
+            <img src="Trisha1.png" alt="Trisha Blessing">
+            <img src="Rob1.png" alt="Rob Kammen">
+            <img src="BWBL1.png" alt="BWBL">
+        </div>
+    </div>
+    <div class="grid">
+        <a href="https://trishablessingmassage.com" target="_blank" class="card">
+            <img src="Trisha1.png" alt="Trisha Blessing Massage">
+            <div class="overlay">
+                <h3>Trisha Blessing Massage</h3>
+                <p>Outdated website overhaul for local masseuse</p>
+            </div>
+        </a>
+
+        <a href="https://kmax607.github.io/Socially-Current/" target="_blank" class="card">
+            <img src="SC3.png" alt="Socially Current">
+            <div class="overlay">
+                <h3>Socially Current</h3>
+                <p>Tech startup website built from scratch</p>
+            </div>
+        </a>
+    </div>
+    <br><br>
+    <div class="grid">
+        <a href="https://kmax607.github.io/robkammen/" target="_blank" class="card">
+            <img src="Rob1.png" alt="Wilkes-Barre Psychologist">
+            <div class="overlay">
+                <h3>Wilkes-Barre Psychologist</h3>
+                <p>Complete website redesign for local psychologist</p>
+            </div>
+        </a>
+
+        <a href="https://kmax607.github.io/oneshot/" target="_blank" class="card">
+            <img src="OneShot2.png" alt="One Shot Entertainment">
+            <div class="overlay">
+                <h3>One Shot Entertainment</h3>
+                <p>Website built from scratch for indie film studio</p>
+            </div>
+        </a>
+    </div>
+    <br><br>
+    <div class="grid">
+        <a href="https://bwbl.net/" target="_blank" class="card">
+            <img src="BWBL3.png" alt="BWBL">
+            <div class="overlay">
+                <h3>BWBL Wiffleball League</h3>
+                <p>Updated site redesign for a wiffle ball leauge</p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m a web developer passionate about creating clean, user-focused experiences. Skilled in HTML, CSS, JavaScript, and responsive design. I thrive on bringing ideas to life with modern, functional websites.</p>
+    <ul class="skills">
+        <li>HTML/CSS/JS</li>
+        <li>Responsive Design</li>
+        <li>UI/UX Principles</li>
+        <li>Problem Solving</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Let’s Work Together</h2>
+    <p>Want a website that stands out? Shoot me a message.</p>
+    <a href="mailto:max.kraus607@gmail.com" class="btn">Contact Me</a>
+</section>
+
+<footer>
+    <p>© 2025 Max Kraus | Built with 💻 and ☕</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

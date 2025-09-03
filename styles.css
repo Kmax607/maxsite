@@ -1,0 +1,437 @@
+:root {
+    --orange: #f6511d;
+    --yellow: #ffb400;
+    --blue: #00a6ed;
+    --black: #111;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: var(--black);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.hero .highlight {
+    color: var(--orange);
+}
+
+.btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: var(--yellow);
+}
+
+/* PROJECTS */
+.projects {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgb(0, 166, 237);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.card:hover .overlay {
+    transform: translateY(0);
+}
+
+/* ABOUT */
+.about {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.skills {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skills li {
+    background: var(--orange);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+/* CONTACT */
+.contact {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.contact .btn {
+    background: var(--black);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--black);
+    color: var(--yellow);
+}
+
+/* RESPONSIVE NAV */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--black);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Logo image */
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+/* CAROUSEL */
+.carousel {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgb(0, 166, 237);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    flex: 0 0 100%;
+    object-fit: cover;
+}
+
+/* Use accent colors more */
+.hero {
+    background: linear-gradient(135deg, var(--black), var(--blue));
+}
+.projects {
+    background: var(--black);
+    color: var(--blue);
+}
+.about {
+    background: var(--white);
+    color: var(--black);
+}
+.contact {
+    background: var(--orange);
+    color: var(--white);
+}
+footer {
+    background: var(--black);
+    color: var(--yellow);
+}
+
+/* Logo showcase */
+.logo-showcase {
+    padding: 3rem;
+    text-align: center;
+    background: var(--blue);
+}
+.logo-showcase img {
+    height: 120px;
+    width: auto;
+}
+
+/* Quote section */
+.quote-section {
+    background: var(--orange);
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+}
+.headshot {
+    width: 220px;
+    border-radius: 50%;
+    box-shadow: 0 8px 40px rgb(0, 166, 237);
+}
+.quote-text {
+    flex: 1;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+}
+.quote-author {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.hero-logo {
+    width: 120px;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+/* Simple fade/slide animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 2rem 0; /* top padding creates blank space */
+    position: relative;
+    overflow: hidden; /* keeps logo from overflowing section */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-top: 2rem; /* extra breathing room under the blank space */
+}
+
+.hero-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px; /* adjust size */
+    max-width: 80%;
+    opacity: 0.08; /* faint watermark */
+    transform: translate(-50%, -50%);
+    z-index: 0; /* behind text */
+    animation: slowSlide 8s ease-in-out infinite alternate;
+}
+
+@keyframes slowSlide {
+    from {
+        transform: translate(-55%, -50%) scale(1);
+    }
+    to {
+        transform: translate(-45%, -50%) scale(1);
+    }
+}
+
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 1; /* ensures text sits above logo */
+}
+
+/* Start hidden; reveal with animation when scrolled into view */
+.quote-word,
+.quote-author {
+    opacity: 0;
+}
+
+.quote-word.show,
+.quote-author.show {
+    animation: fadeUp 600ms ease forwards;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .quote-word,
+    .quote-author {
+        transition: none !important;
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Ensure words animate well inline */
+.quote-line,
+#animated-quote {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/* Each word should be its own inline-block so translateY looks smooth */
+.quote-word {
+    display: inline-block;
+    margin-right: 0.6rem;
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+/* Author initially hidden and appears after words */
+.quote-author {
+    display: block;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(8px);
+    color: var(--black); /* keeps contrast on orange bg */
+}
+
+/* Show state (triggered by JS) */
+.quote-word.show,
+.quote-author.show {
+    animation: fadeUp 600ms ease forwards;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .quote-word,
+    .quote-author {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
