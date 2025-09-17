@@ -418,7 +418,7 @@ footer {
     margin-top: 1rem;
     opacity: 0;
     transform: translateY(8px);
-    color: var(--black); /* keeps contrast on orange bg */
+    color: var(--white); /* keeps contrast on orange bg */
 }
 
 /* Show state (triggered by JS) */

@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d994bf24-bcd7-49ff-8d0b-2d787b6409b1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Headshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Headshot2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Headshot_202x250.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Headshot_no_border_202x250.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Headshot_no_border_202x250_high_quality.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/download.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BWBL4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BWBL5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trisha3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trisha4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/itch.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SC3.png" beforeDir="false" afterPath="$PROJECT_DIR$/SC3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headshot.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +66,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\maxkr\WebstormProjects\Maxsite" />
+      <recent name="C:\Users\maxkr\WebstormProjects\Trisha4" />
       <recent name="C:\Users\maxkr\WebstormProjects\placeholder" />
     </key>
   </component>
@@ -89,7 +88,7 @@
       <workItem from="1756855316262" duration="8791000" />
       <workItem from="1757112485645" duration="691000" />
       <workItem from="1758049853210" duration="1131000" />
-      <workItem from="1758132360562" duration="2347000" />
+      <workItem from="1758132360562" duration="3948000" />
     </task>
     <servers />
   </component>

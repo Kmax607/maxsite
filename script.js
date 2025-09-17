@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------
     const section = document.querySelector('.quote-section');
     if (section) {
-        const phrases = ['“Efficient,”', '“Adaptable,”', '“Handsome”'];
+        const phrases = ['“Efficient,', 'Adaptive,', 'Handsome”'];
 
         // Find or create the quote container
         let quoteEl = section.querySelector('#animated-quote');
