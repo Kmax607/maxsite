@@ -82,3 +82,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+/*document.addEventListener('DOMContentLoaded', () => {
+    // Only enable this on touch devices
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+        document.querySelectorAll('.double-tap').forEach(link => {
+            let tapped = false;
+
+            link.addEventListener('click', e => {
+                if (!tapped) {
+                    // first tap → prevent navigation & mark as tapped
+                    e.preventDefault();
+                    tapped = true;
+
+                    // allow second tap for ~600ms
+                    setTimeout(() => tapped = false, 600);
+                }
+                // second tap → browser follows the link normally
+            });
+        });
+    }
+});*/
+
+// ---------------------------
+// Carousel Autoplay (Fade)
+// ---------------------------
+const track = document.querySelector('.carousel-track');
+if (track) {
+    const slides = Array.from(track.children);
+    let index = 0;
+
+    function showSlide(i) {
+        slides.forEach((slide, idx) => {
+            slide.classList.remove('active');
+            if (idx === i) slide.classList.add('active');
+        });
+    }
+
+    // Initial display
+    showSlide(index);
+
+    // Auto-slide every 4s
+    setInterval(() => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+    }, 4000);
+}

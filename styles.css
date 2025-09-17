@@ -245,6 +245,15 @@ html {
     background: var(--white);
     color: var(--black);
 }
+
+.about h2 {
+    color: #f6511d;
+}
+
+.about p {
+    color: var(--black);
+}
+
 .contact {
     background: var(--orange);
     color: var(--white);
