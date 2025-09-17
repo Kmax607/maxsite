@@ -273,6 +273,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .quote-container {
     display: flex;
     flex-wrap: wrap;
@@ -280,11 +281,16 @@ footer {
     gap: 2rem;
     max-width: 900px;
 }
+
+/* Headshot — glow hugs the photo */
 .headshot {
-    width: 220px;
-    border-radius: 50%;
-    box-shadow: 0 8px 40px rgb(0, 166, 237);
+    width: 300px;             /* visible size on desktop */
+    display: block;
+    border-radius: 20px;      /* rounded corners */
+    box-shadow: 0 0 60px rgb(7, 160, 255); /* blue glow */
+    object-fit: cover;        /* scales/crops to fill */
 }
+
 .quote-text {
     flex: 1;
     font-size: 1.8rem;
@@ -296,7 +302,7 @@ footer {
     margin-top: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
-    color: var(--black);
+    color: var(--blue);
 }
 
 .hero-logo {
@@ -435,3 +441,5 @@ footer {
         transform: none !important;
     }
 }
+
+
