@@ -287,7 +287,7 @@ footer {
     width: 300px;             /* visible size on desktop */
     display: block;
     border-radius: 20px;      /* rounded corners */
-    box-shadow: 0 0 60px rgb(7, 160, 255); /* blue glow */
+    box-shadow: 0 0 90px rgb(7, 160, 255); /* blue glow */
     object-fit: cover;        /* scales/crops to fill */
 }
 
@@ -442,4 +442,85 @@ footer {
     }
 }
 
+.contact {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.25);
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--orange);
+}
+
+.contact .btn {
+    margin-top: 1rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact .btn:hover {
+    background: var(--yellow);
+}
+
+.skills {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;   /* stack items vertically */
+    gap: 0.75rem;             /* space between items */
+    align-items: center;      /* keep them centered */
+    list-style: none;         /* remove bullets */
+    padding: 0;
+}
+
+.skills li {
+    background: var(--orange);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.about-logo {
+    display: block;
+    margin: 2rem auto 0;   /* centers horizontally and adds top spacing */
+    width: 150px;          /* adjust size as needed */
+    max-width: 40%;
+}
 

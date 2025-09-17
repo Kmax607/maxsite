@@ -121,24 +121,50 @@
 <!-- ABOUT -->
 <section id="about" class="about">
     <h2>About Me</h2>
-    <p>I’m a web developer passionate about creating clean, user-focused experiences. Skilled in HTML, CSS, JavaScript, and responsive design. I thrive on bringing ideas to life with modern, functional websites.</p>
+    <br>
+    <p>I’m a web developer passionate about creating clean, user-focused experiences. Skilled in HTML, CSS, JavaScript, and responsive design. I thrive on bringing ideas to life with modern, functional websites that adapt to modern devices of any shape or size.</p>
+    <br>
     <ul class="skills">
         <li>HTML/CSS/JS</li>
         <li>Responsive Design</li>
         <li>UI/UX Principles</li>
         <li>Problem Solving</li>
     </ul>
+    <br>
+    <img src="Max Logo.png" alt="Max Logo" class="about-logo">
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
     <h2>Let’s Work Together</h2>
-    <p>Want a website that stands out? Shoot me a message.</p>
-    <a href="mailto:max.kraus607@gmail.com" class="btn">Contact Me</a>
+    <p>Want a website tailored to your needs? Send me a message</p>
+
+    <form
+            action="https://formspree.io/f/yourFormID"
+            method="POST"
+            class="contact-form"
+    >
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
 </section>
 
 <footer>
-    <p>© 2025 Max Kraus | Built with 💻 and ☕</p>
+    <p>© 2025 Max Kraus | Thanks for visiting my site</p>
 </footer>
 
 <script src="script.js"></script>
